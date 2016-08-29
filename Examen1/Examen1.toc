@@ -1,4 +1,0 @@
-\select@language {spanish}
-\contentsline {section}{\numberline {1} Ejercicio 1}{1}
-\contentsline {section}{\numberline {2} Ejercicio 3 }{2}
-\contentsline {section}{\numberline {3} Ejercicio 11}{4}
