@@ -309,5 +309,121 @@ muestra en la figura~\ref{fig:12_1}. Si el aeroplano cambia su velocidad a una r
 
 \textbf{Solución:}
 
+\begin{center}
+
+\begin{equation}
+\bar{r} = r\hat{r}
+\end{equation}
+
+\begin{equation}
+\bar{v} = \frac{d\bar{r}}{dt} = \dot{r}\hat{r} + r\dot{\hat{r}} = \dot{r}\hat{r} + r\dot{\theta}\hat{r}
+\end{equation}
+
+Sabemos que $\hat{x} = cos(\theta)\hat{r} - sen(\theta)\hat{\theta} \therefore$\\
+
+\begin{equation}
+\bar{v} = v_r\hat{r} + v_\theta\hat{\theta} = v_0\hat{x} = v_0 cos(\theta)\hat{r} - v_0 sen(\theta)
+\end{equation}
+
+Sabemos que $\dot{\hat{r} = \dot{\theta}\hat{\theta}}$  y $\dot{\hat{\theta}} = \dot{\theta}\hat{\theta} \therefore$\\
+
+\begin{equation}
+  \bar{v} = v_0 cos(\theta)\hat{r} - v_0 sen(\theta) = \dot{r}\hat{r} + r\dot{\theta}\hat{\theta}
+\end{equation}
+
+Igualando termino a termino\\
+
+\begin{equation}
+  v_0 cos(\theta) = \dot{r} \to \dot{r} = v_0 cos(\theta)
+\end{equation}
+
+\begin{equation}
+  -v_0 sen(\theta) = r\dot{\theta} \to \dot{\theta} = -\frac{v_0 sen(\theta)}{r}
+\end{equation}
+
+Sustituyendo los valores numericos en $\dot{r}$ y $\dot{\theta}$\\
+
+\begin{equation}
+  \left\lbrace
+  \begin{array}{l}
+  \dot{r} = (150 \frac{m}{s})(\frac{800 m}{\sqrt{600^{2} + 800^{2}} m}) = 120 \frac{m}{s}\\
+  \dot{\theta} = -\frac{v_0 \frac{b}{r}}{r} = -\frac{v_0 b}{r^{2}} = \frac{(-150\frac{m}{s})(600 m)}{600^{2} + 800^{2} m^{2}} = -0.09 \frac{rad}{s}
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \hat{a} = \frac{dv}{dt} = \ddot{r}\hat{r} + \dot{r}\dot{\hat{r}} + \dot{r}\dot{\theta}\hat{\theta} + r\ddot{\theta}\hat{\theta} + r\dot{\theta}\hat{\theta}
+\end{equation}
+
+Sabemos que:\\
+$\bar{a} = \hat{a_t}\hat{x} + a_n\hat{y}$\\
+$\hat{x} = cos(\theta)\hat{r} - sen(\theta)\hat{\theta}$\\
+$\hat{y} = sen(\theta)\hat{r} + cos(\theta)\hat{\theta}$\\
+$\therefore$ al factorizar y sustituir\\
+
+\begin{equation}
+  \hat{a} = (\ddot{r} - r\dot{\theta}^{2})\hat{r} + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\hat{\theta}
+\end{equation}
+
+\begin{equation}
+  \hat{a} = \hat{a_t}(cos(\theta)\hat{r} - sen(\theta)\hat{\theta}) + a_n(sen(\theta)\hat{r} + cos(\theta)\hat{\theta}) = (\ddot{r} - r\dot{\theta}^{2})\hat{r} + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\hat{\theta}
+\end{equation}
+
+Igualando terminos\\
+
+\begin{equation}
+  \hat{a_t}cos(\theta) + a_n sen(\theta) = \ddot{r} - r\dot{\theta}^{2}
+\end{equation}
+
+\begin{equation}
+  -\hat{a_t}sen(\theta) + a_n cos(\theta) = r\ddot{\theta} + 2\dot{r}\dot{\theta}
+\end{equation}
+
+Despejando $\ddot{r}$:\\
+
+\begin{equation}
+  \ddot{r} = \hat{a_t}cos(\theta) + a_n sen(\theta) + r\dot{\theta}^{2}
+\end{equation}
+
+\begin{equation}
+  \ddot{r} = \frac{\hat{a_t} a}{r} + \frac{v_0^{2}b}{\rho r} + r\dot{\theta}^{2}
+\end{equation}
+
+Despejando $\ddot{\theta}$:\\
+
+\begin{equation}
+  \ddot{\theta} = \frac{cos(\theta) - \hat{a_t}sen(\theta) - 2\dot{r}\dot{\theta}}{r}
+\end{equation}
+
+\begin{equation}
+  \ddot{\theta} = \frac{v_0^{2}cos(\theta)}{\rho r} - \frac{ \hat{a_t}sen(\theta)}{r} - \frac{2\dot{r}\dot{\theta}}{r}
+\end{equation}
+
+\begin{equation}
+  \ddot{\theta} = \frac{v_0^{2}a}{\rho r^{2}} - \frac{\hat{a_t}b}{r^{2}} - \frac{2\dot{r}\dot{\theta}}{r}
+\end{equation}
+
+Sustituyendo los valores numericos en $\ddot{r}$ y $\ddot{\theta}$\\
+
+\begin{equation}
+  \ddot{r} = \frac{(25 \frac{m}{s^{2}})(800 m)}{\sqrt{800^{2} + 600^{2}} m} + \frac{(150 \frac{m}{s})^{2}(600 m)}{(2000 m)(\sqrt{600^{2} + 800^{2}} m)} + (\sqrt{600^{2} + 800^{2}} m)(-0.09 \frac{rad}{s})^{2}
+\end{equation}
+
+\begin{equation}
+  \ddot{\theta} = \frac{(150 \frac{m}{s})^{2}(800 m)}{(2000 m)((800^{2} + 600^{2})m^{2})} - \frac{(25 \frac{m}{s^{2}})(600 m)}{((800^{2} + 600^{2})m^{2})} - \frac{(2)(120 \frac{m}{s})(-0.09 \frac{rad}{s})}{\sqrt{800^{2} + 600^{2}}m}
+\end{equation}
+
+\begin{equation}
+  \left\lbrace
+  \begin{array}{l}
+  \ddot{r} = 20 \frac{m}{s^{2}} + 6.75 \frac{m}{s^{2}} + 8.1 \frac{m}{s^{2}} = 34.85 \frac{m}{s^{2}}\\
+  \ddot{\theta} = \frac{9}{1000} \frac{rad}{s^{2}} - \frac{3}{200} \frac{rad}{s^{2}} + \frac{27}{1250} \frac{rad}{s^{2}} = 0.0156 \frac{rad}{s^{2}}
+  \end{array}
+  \right.
+\end{equation}
+
+
+\end{center}
 
 \end{document}
