@@ -212,8 +212,94 @@ cuando $m_A = 40 kg$, $m_B = 8 kg$, $\theta = 25$, $\mu_k = 0.15$ y $|\hat{P}| =
 \textbf{Solución:}
 
 \begin{center}
+Analizando las reestricciones de la cuerda\\
 
-Solucion
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=7cm]{22_2}
+  \caption{Analisis de cuerdas.}
+  \label{fig:22_2}
+\end{figure}
+
+$2 x_A + x_{B/A} = Constante$\\
+\hfill \break
+$2 v_A + v_{B/A} = 0$\\
+\hfill \break
+$2 a_A + a_{B/A} = 0$\\
+\hfill \break
+$a_B = a_A + a_{B/A}$\\
+\hfill \break
+$a_B = a_A + ( - 2 a_A )$\\
+\hfill \break
+$a_B = - a_A$\\
+\hfill \break
+Analizando el movimiento del bloque B:\\
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=4cm]{22_3}
+  \caption{Diagrama de cuerpo libre del bloque B}
+  \label{fig:22_3}
+\end{figure}
+
+$\Sigma F_y = N_{AB} - W_B cos(\theta) = 0$\\
+\hfill \break
+Considerando que $N_{AB} = m_B g cos(\theta)$\\
+\hfill \break
+Cuando el bloque B se mueve, aparece una fuerza de rozamiento ($F_{AB}$) sobre el eje x\\
+\hfill \break
+$F_{AB} = \mu_k N_{AB} = 0.15 m_B g cos(\theta)$\\
+\hfill \break
+$\Sigma F x = - T + F_{AB} + W_B sin(\theta) = m_B a_B$\\
+\hfill \break
+Despejamos la tension para este caso y operamos:\\
+\hfill \break
+$T = m_B [ g (0.15 cos(\theta) + sin(\theta) ) - a_B ]$\\
+\hfill \break
+$T = 8[9.81(0.15 cos(\theta) + sin(\theta) - a_B ]$\\
+\hfill \break
+$T = (8(5.47952 - a_B)) [N]$\\
+\hfill \break
+Analizando el movimiento del bloque A:\\
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=4cm]{22_4}
+  \caption{Diagrama de cuerpo libre del bloque A}
+  \label{fig:22_4}
+\end{figure}
+
+$\Sigma F_y = N_A - N_{AB} - W_A cos(\theta) = 0$\\
+\hfill \break
+$N_A = ( m_A + m_B ) g cos(\theta)$\\
+\hfill \break
+La fuerza de friccion del bloque A con respecto a la superficie:\\
+\hfill \break
+$F_A = \mu_k N_A = 0.15( m_A + m_B ) g cos(\theta)$\\
+\hfill \break
+$\Sigma F_x =  - T - F_A - F_{AB} + W_A sin(\theta) + P sin(\theta) = m_A a_A$\\
+\hfill \break
+Despejamos la tension para este caso y operamos:\\
+\hfill \break
+$T = m_A g sin(\theta) - 0.15( m_A + m_B ) g cos(\theta) - 0.15 m_B g cos(\theta) - m_A ( - a_B ) + P sin(\theta)$\\
+\hfill \break
+$T = g [ m_A sin(\theta) - 0.15( m_A + 2 m_B ) cos(\theta) ] + m_A a_B + P sin(\theta)$\\
+\hfill \break
+$T = 9.81[40 sin(\theta) - 0.15(40 + 2 * 8) cos(\theta) ] + 40 a_B + P sin(\theta)$\\
+\hfill \break
+$T = (91.15202 + 40 a_B + + P sin(\theta)) [N]$\\
+\hfill \break
+Igualamos las ecuaciones obtenidas para ambas T y usando lo sabido de analisis de las cuerdas:\\
+\hfill \break
+$8(5.47952 - a_B ) = 91.15202 + 40 a_B + P sin(\theta)$\\
+
+\begin{equation}
+  \left\lbrace
+  \begin{array}{l}
+    a_B = 15.9189 \frac{m}{s^2}
+  \end{array}
+  \right.
+\end{equation}
 
 \end{center}
 
